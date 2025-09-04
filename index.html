@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeFlix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 id="app-title">TeeFlix</h1>
+    </header>
+
+    <!-- Controls Section -->
+    <section class="controls">
+      <!-- Search Box -->
+      <input
+        type="text"
+        id="search-box"
+        placeholder="Search for movies..."
+        aria-label="Search movies by title"
+      />
+
+      <!-- Sort Dropdown -->
+      <select id="sort-select" aria-label="Sort movies by rating">
+        <option value="">Sort by Rating</option>
+        <option value="rating-desc">Highest First</option>
+        <option value="rating-asc">Lowest First</option>
+      </select>
+
+      <!-- Genre Filter -->
+      <select id="genre-select" aria-label="Filter movies by genre">
+        <option value="">Filter by Genre</option>
+        <!-- Genres will be injected dynamically -->
+      </select>
+    </section>
+
+    <!-- Movie Grid -->
+    <main>
+      <div id="movie-grid" role="list" class="movie-grid">
+        <!-- Movies will appear here -->
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
